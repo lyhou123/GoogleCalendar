@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/google
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: lyhou123
+  application:
+    name: idata
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 8080
+
+springdoc:
+  swagger-ui:
+    path: '/'
+google:
+    credentials-file-path: "calenda4.json"
